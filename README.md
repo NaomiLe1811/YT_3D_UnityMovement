@@ -118,7 +118,7 @@ rigidbody.AddForce(Vector3.forward * force);
 
 Trong đó **`force`** là một số biểu thị cường độ của lực áp dụng lên nhân vật, và **`Vector3.forward`** đại diện cho hướng di chuyển về phía trước.
 
-1. **Sử dụng transform.forward và force**:
+2. **Sử dụng transform.forward và force**:
 
 ```csharp
 csharpCopy code
@@ -127,7 +127,7 @@ rigidbody.AddForce(transform.forward * force);
 
 Tương tự như cách sử dụng **`Vector3.forward`**, nhưng sử dụng **`transform.forward`** để xác định hướng di chuyển.
 
-1. **Sử dụng các phương thức ForceMode khác nhau**:
+3. **Sử dụng các phương thức ForceMode khác nhau**:
 
 ```csharp
 csharpCopy code
@@ -136,7 +136,7 @@ rigidbody.AddForce(Vector3.forward * force, ForceMode.Impulse);
 
 Bạn có thể sử dụng các **`ForceMode`** khác nhau như **`Force`**, **`Acceleration`**, **`Impulse`**, hoặc **`VelocityChange`** để kiểm soát cách lực được áp dụng lên đối tượng.
 
-1. **Kết hợp với Input từ bàn phím hoặc thiết bị đầu vào**:
+4. **Kết hợp với Input từ bàn phím hoặc thiết bị đầu vào**:
 
 ```csharp
 csharpCopy code
