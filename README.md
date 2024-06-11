@@ -32,8 +32,10 @@ transform.Translate(0f, yOffset, 0f);
 **Cách thứ 3**: Sử dụng Rigidbody.velocity 
 Nếu đối tượng của bạn có một thành phần Rigidbody đính kèm và bạn muốn di chuyển nó trong mô phỏng vật lý, bạn có thể thao tác trên thuộc tính vận tốc của nó.
 
+```csharp
 Rigidbody rb = GetComponent<Rigidbody>();
 rb.velocity = new Vector3(rb.velocity.x, desiredYVelocity, rb.velocity.z);
+```
 
 ```csharp
 Rigidbody rb = GetComponent<Rigidbody>();
@@ -42,7 +44,6 @@ Rigidbody rb = GetComponent<Rigidbody>();
 - **`GetComponent<Rigidbody>()`**: Đây là một phương thức được sử dụng để truy xuất thành phần Rigidbody đính kèm với đối tượng hiện tại. Điều này giúp bạn có thể tương tác với các tính năng vật lý của đối tượng, như di chuyển hoặc tác động lực.
 
 ```csharp
-csharpCopy code
 rb.velocity = new Vector3(rb.velocity.x, desiredYVelocity, rb.velocity.z);
 ```
 
@@ -77,7 +78,7 @@ rb.AddForce(force, ForceMode.Force);
 
 **Vậy ngoài những cách này ra thì còn cách nào nữa ko?**
 
-Vẫn còn, ví dụ như bạn muốn  sử dụng phương thức**`transform.position`** để khiến đối tượng 3D di chuyển về phía trước trong Unity. Dưới đây là một số cách phổ biến:
+Vẫn còn, ví dụ như bạn muốn  sử dụng phương thức **`transform.position`** để khiến đối tượng 3D di chuyển về phía trước trong Unity. Dưới đây là một số cách phổ biến:
 
 1. **Sử dụng Vector3.forward hoặc Vector3.back**:
 Bạn có thể sử dụng các hằng số Vector3 như **`Vector3.forward`** hoặc **`Vector3.back`** để di chuyển đối tượng theo hướng phía trước hoặc phía sau. Ví dụ:
